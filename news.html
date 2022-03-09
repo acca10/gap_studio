@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gap Studio - News</title>
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/jquery.inview.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <!-- <header id="header" class="header js-header">
+    <nav>
+      <ul>
+        <li><a class="js-header" href="#">Home</a></li>
+        <li><a class="js-header" href="#">News</a></li>
+        <li><a class="js-header" href="#">Voice</a></li>
+        <li><a class="js-header" href="#">Gaps</a></li>
+        <li><a class="js-header" href="#">About</a></li>
+        <li><a class="js-header" href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header> -->
+
+    <section id="news" class="inner">
+      <div class="index-chapter-head">
+        <h2 class="hdl ">News</h2>
+        <p class="cpy">ニュース</p>
+      </div>
+      
+    <div class="fillter">
+      <!-- フィルタ（ラジオボタン） -->
+      <input type="radio" name="categories" id="All" value="All" checked>
+      <input type="radio" name="categories" id="info" value="info">
+      <input type="radio" name="categories" id="interview" value="interview">
+      <input type="radio" name="categories" id="gaps" value="gaps">
+      <!-- ラベルを分離 -->
+      <ol class="filters">
+        <li><label for="All" class="label-all"> すべて表示 </label></li>
+        <li><label for="info" class="label-info"> お知らせ </label></li>
+        <li><label for="interview" class="label-interview"> インタビュー </label></li>
+        <li><label for="gaps" class="label-event"> Gaps </label></li>
+      </ol>
+
+      <ul class="topics-content targets">
+        <li class="topics-item target" data-category="gaps">
+          <a href="#">
+            <div class="topics-header">
+              <p class="label">
+                <span class="label-event">Gaps</span>
+              </p>
+              <p class="date">2022.03.01</p>
+            </div>
+            <div class="topics-item-text">
+              <p>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+            </div>
+          </a>
+        </li>
+
+        <li class="topics-item target" data-category="interview">
+          <a href="#">
+            <div class="topics-header">
+              <p class="label">
+                <span class="label-interview">インタビュー</span>
+              </p>
+              <p class="date">2022.02.12</p>
+            </div>
+            <div class="topics-item-text">
+              <p>タイトルタイトルタイトルタイトルタイトル</p>
+            </div>
+          </a>
+        </li>
+
+        <li class="topics-item target" data-category="gaps">
+          <a href="#">
+            <div class="topics-header">
+              <p class="label">
+                <span class="label-event">Gaps</span>
+              </p>
+              <p class="date">2022.02.08</p>
+            </div>
+            <div class="topics-item-text">
+              <p>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+            </div>
+          </a>
+        </li>
+
+        <li class="topics-item target" data-category="info">
+          <a href="#">
+            <div class="topics-header">
+              <p class="label">
+                <span class="label-info">お知らせ</span>
+              </p>
+              <p class="date">2022.02.02</p>
+            </div>
+            <div class="topics-item-text">
+              <p>タイトルタイトルタイトルタイトルタイトルタイトル</p>
+            </div>
+          </a>
+        </li>
+        <li class="topics-item target" data-category="info">
+          <a href="#">
+            <div class="topics-header">
+              <p class="label">
+                <span class="label-info">お知らせ</span>
+              </p>
+              <p class="date">2022.01.28</p>
+            </div>
+            <div class="topics-item-text">
+              <p>タイトルタイトルタイトルタイトルタイトルタイトル</p>
+            </div>
+          </a>
+        </li>
+        <li class="topics-item target" data-category="info">
+          <a href="#">
+            <div class="topics-header">
+              <p class="label">
+                <span class="label-info">お知らせ</span>
+              </p>
+              <p class="date">2022.01.25</p>
+            </div>
+            <div class="topics-item-text">
+              <p>タイトルタイトルタイトルタイトルタイトルタイトル</p>
+            </div>
+          </a>
+        </li>
+        <li class="topics-item target" data-category="interview">
+          <a href="#">
+            <div class="topics-header">
+              <p class="label">
+                <span class="label-interview">インタビュー</span>
+              </p>
+              <p class="date">2022.01.22</p>
+            </div>
+            <div class="topics-item-text">
+              <p>タイトルタイトルタイトルタイトルタイトルタイトル</p>
+            </div>
+          </a>
+        </li>
+        <li class="topics-item target" data-category="info">
+          <a href="#">
+            <div class="topics-header">
+              <p class="label">
+                <span class="label-info">お知らせ</span>
+              </p>
+              <p class="date">2022.01.12</p>
+            </div>
+            <div class="topics-item-text">
+              <p>タイトルタイトルタイトルタイトルタイトルタイトル</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+      <ol>
+        <li class="pager"><a href="#">前へ</a></li>
+        <li class="pager"><span>1</span></li>
+        <li class="pager"><a href="#">2</a></li>
+        <li class="pager"><a href="#">3</a></li>
+        <li class="pager"><a href="#">4</a></li>
+        <li class="pager">...</li>
+        <li class="pager"><a href="#">次へ</a></li>
+      </ol>
+
+      <div class="more">
+        <a href="index.html">Homeに戻る</a>
+      </div>
+
+    </section>
+
+  <footer>
+    <div class="footer-contents">
+      <h1 class="footer-logo">Gap Studio</h1>
+      <div class="sns">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      <p><small>Copyright &copy; 2022 Gap Studio All Rights Reserved</small></p>
+    </div>
+  </footer>
+</body>
+</html>
