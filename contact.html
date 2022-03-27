@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gap Studio - Contact</title>
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/jquery.inview.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body class="contact">
+  <header id="header" class="header js-header">
+    <nav>
+      <ul>
+        <li><a class="js-header" href="index.html">Home</a></li>
+        <li><a class="js-header" href="#">About</a></li>
+        <li><a class="js-header" href="case.html">Case</a></li>
+        <li><a class="js-header" href="#">Gaps</a></li>
+        <li><a class="js-header" href="voice.html">Voice</a></li>
+        <li><a class="js-header" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contents">
+  <section id="contact" class="inner contents-inner">
+    <div class="index-chapter-head">
+      <h2 class="hdl ">Contact</h2>
+      <p class="cpy">お問合わせフォーム</p>
+    </div>
+    <p class="text">ご質問・お問い合わせは、下記フォームをご利用下さい。<br>
+      お送りいただいた内容について、弊社担当より回答させていただきます。</p>
+  
+  <div class="Form">
+  <!-- <form action="confirm.php" method="post" name="form" onsubmit="return validate()"> -->
+    <div class="Form-Item">
+      <p class="Form-Item-Label">氏名<span class="Form-Item-Label-Required">必須</span></p>
+      <input type="text" class="Form-Item-Input" placeholder="例）山田  太郎">
+    </div>
+    <div class="Form-Item">
+      <p class="Form-Item-Label">電話番号<span class="Form-Item-Label-Required">必須</span></p>
+      <input type="tel" class="Form-Item-Input" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" placeholder="例）090-1234-5678">
+    </div>
+    <div class="Form-Item">
+      <p class="Form-Item-Label">メールアドレス<span class="Form-Item-Label-Required">必須</span></p>
+      <input type="email" class="Form-Item-Input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="例）example@gmail.com">
+    </div>
+    <div class="Form-Item">
+      <p class="Form-Item-Label isMsg">お問合せ種別<span class="Form-Item-Label-Required">必須</span></p>
+      <select name="kind" class="Form-Item-Input">
+        <option value="">選択してください</option>
+        <option value="">申込み・Gapsについて</option>
+        <option value="">お支払いについて</option>
+        <option value="">ご意見・ご感想</option>
+        <option value="">その他お問合せ</option>
+      </select>
+    </div>
+    <div class="Form-Item">
+      <p class="Form-Item-Label isMsg">お問合せ内容<span class="Form-Item-Label-Required">必須</span></p>
+      <textarea class="Form-Item-Textarea" placeholder="お問合わせ内容をご記入ください。"></textarea>
+    </div>
+    <!-- </form> -->
+  </div>
+  <a href="#">※個人情報の取り扱いについて</a>
+  <input type="submit" class="btn" value="入力内容を確認する">
+    </section>
+    </div>
+  <footer>
+    <div class="footer-contents">
+      <h1 class="footer-logo">Gap Studio</h1>
+      <div class="sns">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      <p><small>Copyright &copy; 2022 Gap Studio All Rights Reserved</small></p>
+    </div>
+  </footer>
+</body>
+</html>

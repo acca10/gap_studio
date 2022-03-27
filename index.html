@@ -17,42 +17,63 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- <script src="js/jquery.inview.min.js"></script> -->
   <script src="js/main.js"></script>
+  <!-- <script>
+    jQuery(function(){
+      var windowWidth = $(window).width();
+      var headerHeight = 100;
+      jQuery('a[href^=#]').click(function(){
+        var speed = 1000;
+        var href = jQuery(this).attr("href");
+        var target = jQuery(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top-headerHight;
+        jQuery('body,html').animate({scrollTop:position},speed,'swing');
+        return false;
+      });
+    });
+  </script> -->
 </head>
 <body>
-  <header id="header" class="header js-header">
+  <header id="header" class="header js-header case">
     <nav>
       <ul>
         <li><a class="js-header" href="index.html">Home</a></li>
         <li><a class="js-header" href="#">About</a></li>
-        <li><a class="js-header" href="#">Case</a></li>
-        <li><a class="js-header" href="#">Gaps</a></li>
-        <li><a class="js-header" href="#">Voice</a></li>
-        <li><a class="js-header" href="#">Contact</a></li>
+        <li><a class="js-header" href="case.html">Case</a></li>
+        <li><a class="js-header" href="#">Gaps</a>
+          <!-- <ul>
+            <li><a class="js-header" href="#">Time</a></li>
+            <li><a class="js-header" href="#">Day</a></li>
+            <li><a class="js-header" href="#">Week</a></li>
+            <li><a class="js-header" href="#">Year</a></li>
+          </ul> -->
+        </li>
+        <li><a class="js-header" href="voice.html">Voice</a></li>
+        <li><a class="js-header" href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
+  <div class="contents">
     <div id="mainvisual" class="mv">
-      <div class="text">
-        <h1 class="logo">Gap Studio</h1>
-        <h2>人生に新しい選択を</h2>
+      <div class="mv-text">
+        <h1 class="logo">Gap<br>Studio</h1>
+        <h2 class="text">人生に新しい選択を</h2>
       </div>
       <ul class="fade">
-        <li>
+        <li class="contents-inner">
           <img src="image/baloon4.jpg" alt="">
         </li>
-        <li>
+        <li class="contents-inner">
           <img src="image/fluffy2.jpg" alt="">
         </li>
-        <li>
+        <li class="contents-inner">
           <img src="image/pexels-julia-volk-6118899.jpg" alt="">
         </li>
-        <li>
+        <li class="contents-inner">
           <img src="image/gaps3.jpg" alt="">
         </li>
       </ul>
-      
     </div>
 
     <section id="about">
@@ -136,16 +157,16 @@
       </div>
     </section>
 
-    <section id="voice" class="inner">
+    <section id="case" class="inner contents-inner">
       <div class="index-chapter-head">
         <h2 class="hdl ">Case</h2>
         <p class="cpy">ギャップイヤーの実例</p>
       </div>
 
       <div class="content">
-        <article class="voice-item">
+        <article class="case-item">
           <img src="image/puppy1.jpg" alt="">
-          <h3 class="title">Case20：Sさん（30代/男性）</h3>
+          <h3 class="title"><span>No.20</span>Sさん（30代/男性）</h3>
           <div class="readmore">
             <div class="readmore-item">
               <p>
@@ -162,9 +183,9 @@
           </div>
         </article>
 
-        <article class="voice-item">
+        <article class="case-item">
           <img src="image/puppy2.jpg" alt="">
-          <h3 class="title">Case19：Mさん（30代/男性）</h3>
+          <h3 class="title"><span>No.19</span>Mさん（30代/男性）</h3>
           <div class="readmore">
             <div class="readmore-item">
               <p>
@@ -181,9 +202,9 @@
           </div>
         </article>
 
-        <article class="voice-item">
+        <article class="case-item">
           <img src="image/puppy3.jpg" alt="">
-          <h3 class="title">Case18：Aさん（20代/女性）</h3>
+          <h3 class="title"><span>No.18</span>Aさん（20代/女性）</h3>
           <div class="readmore">
             <div class="readmore-item">
               <p>
@@ -201,11 +222,11 @@
       </div>
 
       <div class="more">
-        <a href="#">もっと見る</a>
+        <a href="case.html">もっと見る</a>
       </div>
     </section>
 
-    <section id="gaps" class="inner">
+    <section id="gaps" class="inner contents-inner">
       <div class="index-chapter-head">
         <h2 class="hdl ">Gaps</h2>
         <p class="cpy">
@@ -217,13 +238,16 @@
 
     <div class="flex">
       <div class="svg">
-        <a href="#">
+        <a href="gapTime.html">
         <svg width="300" height="300" viewBox="0 0 300 300" preserveAspectRatio="xMidYMid meet" >
           <circle cx="150" cy="150" r="135" stroke-width="5" fill="#bffff0">
         </svg>
         <div class="svg-title">
           <p>Gap<br>Time</p>
           <span class="svg-btn">一覧へ</span>
+          <!-- <p class="arrow">
+            <i class="fas fa-chevron-right"></i>
+          </p> -->
         </div>
         </a>
       </div>
@@ -267,7 +291,7 @@
     </div>
     </section>
 
-    <section id="voice" class="inner">
+    <section id="voice" class="inner contents-inner">
     <div class="index-chapter-head">
       <h2 class="hdl ">Voice</h2>
       <p class="cpy">みんなの声</p>
@@ -275,64 +299,37 @@
 
     <div class="content">
       <article class="voice-item">
-        <img src="image/puppy1.jpg" alt="">
-        <h3 class="title">Voice20：Sさん（30代/男性）</h3>
-        <div class="readmore">
-          <div class="readmore-item">
-            <p>
-              出身地：東京都<br>
-              仕事：旅プロデューサー<br>
-              ギャップイヤーの年齢：20歳、28歳。<br>
-              期間：1年間、2ヶ月<br>
-              ＜ギャップイヤーの簡潔な内容＞<br>
-              ・世界一周の旅。<br>
-              ・入院。<br>
-            </p>
-            <a class="readmore-btn" href="#">続きを読む</a>
-          </div>
+        <div class="voice-title">
+          <p class="voice-num time">Time</p>
+          <h3 class="name">Fさん（30代 男性）</h3>
         </div>
+            <p>
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
       </article>
 
       <article class="voice-item">
-        <img src="image/puppy2.jpg" alt="">
-        <h3 class="title">Voice19：Mさん（30代/男性）</h3>
-        <div class="readmore">
-          <div class="readmore-item">
-            <p>
-              出身地：茨城県<br>
-              仕事：無職<br>
-              ギャップイヤーの年齢：22歳、32歳<br>
-              期間：1年間、4ヶ月<br>
-              ＜ギャップイヤーの簡潔な内容＞
-              ・実業団に挑戦。<br>
-              ・家族と過ごす。<br>
-            </p>
-            <a class="readmore-btn" href="#">続きを読む</a>
-          </div>
+        <div class="voice-title">
+          <p class="voice-num week">Week</p>
+          <h3 class="name">Cさん（20代 男性）</h3>
         </div>
+        <p>
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        </p>
       </article>
 
-      <article class="voice-item">
-        <img src="image/puppy3.jpg" alt="">
-        <h3 class="title">Voice18：Aさん（20代/女性）</h3>
-        <div class="readmore">
-          <div class="readmore-item">
-            <p>
-              出身地：福岡県<br>
-              仕事：助産師<br>
-              ギャップイヤーの年齢：20歳<br>
-              期間：数日<br>
-              ＜ギャップイヤーの簡潔な内容＞<br>
-              フィリピンへの研修<br>
-            </p>
-            <a class="readmore-btn" href="#">続きを読む</a>
-          </div>
+      <!-- <article class="voice-item">
+        <div class="voice-title">
+          <p class="voice-num">18</p>
+          <h3 class="name">Aさん（20代 女性）</h3>
         </div>
-      </article>
-    </div>
+        <p>
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        </p>
+      </article> -->
 
     <div class="more">
-      <a href="#">もっと見る</a>
+      <a href="voice.html">もっと見る</a>
     </div>
   </section>
 
@@ -354,7 +351,7 @@
       <div class="more">
         <a href="#">Instagram へ</a>
     </section> -->
-
+  </div>
   </main>
 
   <footer>

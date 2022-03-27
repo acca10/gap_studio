@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gap Studio - Time</title>
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/jquery.inview.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <header id="header" class="header js-header">
+    <nav>
+      <ul>
+        <li><a class="js-header" href="index.html">Home</a></li>
+        <li><a class="js-header" href="#">About</a></li>
+        <li><a class="js-header" href="case.html">Case</a></li>
+        <li><a class="js-header" href="#">Gaps</a></li>
+        <li><a class="js-header" href="voice.html">Voice</a></li>
+        <li><a class="js-header" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contents">
+  <section id="gapTime" class="inner contents-inner">
+    <div class="index-chapter-head">
+      <h2 class="hdl ">Gap Time</h2>
+      <p class="cpy">テキストテキストテキスト</p>
+    </div>
+
+    <div class="fillter">
+      <!-- フィルタ（ラジオボタン） -->
+      <input type="radio" name="categories" id="All" value="All" checked>
+      <input type="radio" name="categories" id="trip" value="trip">
+      <input type="radio" name="categories" id="learn" value="learn">
+      <input type="radio" name="categories" id="life" value="life">
+      <input type="radio" name="categories" id="health" value="health">
+      <input type="radio" name="categories" id="organic" value="organic">
+      <!-- ラベルを分離 -->
+      <ol class="filters">
+        <li><label for="All" class="label-all"> すべて表示 </label></li>
+        <li><label for="trip" class="label-trip"> 旅 <span class="material-icons-outlined">work_outline</span></label></li>
+        <li><label for="learn" class="label-learn"> 学 び 
+          <span class="material-icons-outlined">
+          create
+          </span></label></li>
+        <li><label for="life" class="label-life"> 暮らし 
+          <span class="material-icons-outlined">
+          chair
+          </span></label></li>
+        <li><label for="health" class="label-health"> 健 康 
+          <span class="material-icons-outlined">
+          fitness_center
+          </span></label></li>
+        <li><label for="organic" class="label-organic"> オーガニック 
+          <span class="material-icons-outlined">
+          restaurant
+          </span></label></li>
+      </ol>
+
+    <div class="gaps-content targets">
+      <div class="gaps-item target" data-category="life">
+        <p class="status open">募集中</p>
+        <img src="image/puppy1.jpg" alt="">
+        <div class="gaps-title">
+          <p class="date">3/10<br>（木）</p>
+          <h3>手前みそを作ってみよう</h3>
+        </div>
+        <p class="time-text">
+          テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        </p>
+            <a class="gaps-btn" href="#">詳細を見る</a>
+      </div>
+
+      <div class="gaps-item target" data-category="health">
+        <p class="status close">終了</p>
+        <img src="image/puppy1.jpg" alt="">
+        <div class="gaps-title">
+          <p class="date">3/6<br>（日）</p>
+          <h3>ヨガにチャレンジしてみよう</h3>
+        </div>
+        <p class="time-text">
+          テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        </p>
+            <a class="gaps-btn" href="#">詳細を見る</a>
+      </div>
+
+      <div class="gaps-item target" data-category="trip">
+        <p class="status close">終了</p>
+        <img src="image/puppy1.jpg" alt="">
+        <div class="gaps-title">
+          <p class="date">2/5<br>（土）</p>
+          <h3>いつもと違う江の島を楽しもう</h3>
+        </div>
+        <p class="time-text">
+          テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        </p>
+            <a class="gaps-btn" href="#">詳細を見る</a>
+      </div>
+
+    </div>
+
+      <ol>
+        <li class="pager"><a href="#">前へ</a></li>
+        <li class="pager"><span>1</span></li>
+        <li class="pager"><a href="#">2</a></li>
+        <li class="pager"><a href="#">3</a></li>
+        <li class="pager"><a href="#">4</a></li>
+        <li class="pager">...</li>
+        <li class="pager"><a href="#">次へ</a></li>
+      </ol>
+
+    </section>
+    </div>
+  <footer>
+    <div class="footer-contents">
+      <h1 class="footer-logo">Gap Studio</h1>
+      <div class="sns">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      <p><small>Copyright &copy; 2022 Gap Studio All Rights Reserved</small></p>
+    </div>
+  </footer>
+</body>
+</html>
