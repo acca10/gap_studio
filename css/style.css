@@ -207,46 +207,52 @@ ol {
 }
 
 /* Header */
-.header{
-  /* height: 80px; */
+/* #header .header{
   width: 100%;
   background-color: #fff;
   transition: color 0.2s ease-out;
   position: fixed;
   z-index: 20;
-  /* border-bottom: gray solid 1px; */
-}
+  border-bottom: gray solid 1px;
+} */
 
-.headerColorScroll {
+#header .headerColorScroll {
   color: #fff;
   background-color: #97cdf3;
   transition: color 0.2s ease-out;
   /* border-bottom: none; */
 }
 
-nav ul {
+#header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-nav li {
+#header nav li {
   margin: 40px;
 }
 
-nav li a {
+#header nav li a {
   font-size: 1.25rem;
   color: gray;
 }
 
-nav li a:hover {
+#header nav li a:hover {
   color: #97cdf3;
 }
 
-.headerColorScroll:hover {
+#header .headerColorScroll:hover {
   color: gray;
 }
 
+.Nav {
+  width: 100%;
+  background-color: #fff;
+  transition: color 0.2s ease-out;
+  position: fixed;
+  z-index: 20;
+}
 /* Main */
 #mainvisual {
   height: 650px;
@@ -400,23 +406,32 @@ nav li a:hover {
   margin-bottom: 120px;
 }
 
-.topics-header {
+#news-archive {
+  margin-bottom: 120px;
+}
+
+#news .topics-header,
+#news-archive .topics-header {
   display: flex;
   align-items: center;
 }
-.topics-header .label,
+
+#news .topics-header .label,
+#news-archive .topics-header .label,
 #newspage .label {
   display: flex;
   justify-content: center;
 }
 
-.topics-item-text:hover {
+#news .topics-item-text:hover,
+#news-archive .topics-item-text:hover {
   border-bottom: 2px solid rgba( 151, 205, 243, .7);
   transition: all .3s 0s ease;
 }
 
 span,
 #news .filters label,
+#news-archive .filters label,
 #newspage span {
   border-radius: 3px;
   /* color: gray; */
@@ -443,10 +458,12 @@ input[type="radio"] {
   left: -9999px;
 }
 /* 以下はラベルのスタイル */
-#news .filters {
+#news .filters,
+#news-archive .filters {
   margin-bottom: 100px;
 }
-#news .filters * {
+#news .filters *,
+#news-archive .filters * {
   display: inline-block;
 }
 /* .filters label {
@@ -473,23 +490,27 @@ input[type="radio"] {
 } */
 
 
-#news .label-all {
+#news .label-all,
+#news-archive .label-all {
   background-color: gray;
   color: #fff;
 }
 #news .label-info,
+#news-archive .label-info,
 #newspage .label-info {
   background-color: #a2d2ff;
   /* color: #fff; */
   /* background-color: #7cd1b8; */
 }
 #news .label-event,
+#news-archive .label-event,
 #newspage .label-event {
   /* background-color: #ff865e; */
   background-color: #fee440;
   /* color: gray; */
 }
 #news .label-interview,
+#news-archive .label-interview,
 #newspage .label-interview {
   background-color: #7cd1b8;
   /* color: #fff; */
@@ -497,18 +518,21 @@ input[type="radio"] {
 }
 
 #news .topics-content,
+#news-archive .topics-content,
 #newspage .newspage-content {
   display: flex;
   flex-direction: column;
   width: 800px;
   margin: 0 auto;
 }
-#news .topics-header {
+#news .topics-header,
+#news-archive .topics-header {
   display: flex;
   margin-right: 40px;
 }
 
-#news .topics-item a {
+#news .topics-item a,
+#news-archive .topics-item a {
   position: relative;
   display: flex;
   align-items: center;
@@ -557,11 +581,11 @@ input[type="radio"] {
   display: column;
   padding-top: 50px;
 }
-#newspage header {
+#newspage .header {
   display: flex;
   align-items: center;
 }
-#gapspage header {
+#gapspage .header {
   position: relative;
   display: colmn;
   width: 800px;
@@ -761,6 +785,7 @@ input[type="radio"] {
   right: -25px;
   /* border-top: 1px solid #aaa; */
 }
+
 /* Gaps */
 #gaps {
   margin-bottom: 100px;
@@ -793,15 +818,30 @@ input[type="radio"] {
 
 .svg .svg-title {
   position: absolute;
+  top: 90px;
+  text-align: center;
+  right: 60px;
+  font-family: 'Montserrat', sans-serif;
+}
+/* .svg .svg-title {
+  position: absolute;
   top: 60px;
   text-align: center;
   right: 70px;
   font-family: 'Montserrat', sans-serif;
-}
+} */
 
 .svg p {
   color: gray;
+  font-size: 2.2rem;
+}
+/* .svg p {
+  color: gray;
   font-size: 3rem;
+} */
+
+#gaps .sub {
+  font-size: 0.9rem;
 }
 
 .svg-btn {
@@ -810,7 +850,8 @@ input[type="radio"] {
   align-items: center;
   text-align: center;
   padding: 5px 22px;
-  margin-top: 5px;
+  margin-top: 15px;
+  /* margin-top: 5px; */
   width: 130px;
   color: gray;
   font-size: 1rem;
@@ -837,9 +878,6 @@ input[type="radio"] {
 }
 
 /* gapTime Day Week Year*/
-/* .contents {
-  margin-bottom: 80px;
-} */
 #gapTime,
 #gapDay,
 #gapWeek,
