@@ -795,6 +795,8 @@ input[type="radio"] {
   width: 70%;
   margin: 30px auto 60px;
   text-align: start;
+  font-size: 0.9rem;
+  line-height: 1.75;
 }
 .flex {
   /* display: grid;
