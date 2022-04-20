@@ -15,37 +15,24 @@
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- <script src="js/jquery.inview.min.js"></script> -->
+  <script src="js/jquery.inview.min.js"></script>
   <script src="js/main.js"></script>
-  <!-- <script>
-    jQuery(function(){
-      var windowWidth = $(window).width();
-      var headerHeight = 100;
-      jQuery('a[href^=#]').click(function(){
-        var speed = 1000;
-        var href = jQuery(this).attr("href");
-        var target = jQuery(href == "#" || href == "" ? 'html' : href);
-        var position = target.offset().top-headerHight;
-        jQuery('body,html').animate({scrollTop:position},speed,'swing');
-        return false;
-      });
-    });
-  </script> -->
 </head>
 <body>
   <header id="header" class="header case">
     <nav class="Nav js-header">
-      <ul>
+      <ul class="menu">
         <li><a class="js-header" href="index.html">Home</a></li>
-        <li><a class="js-header" href="#">About</a></li>
+        <li><a class="js-header" href="about.html">About</a></li>
         <li><a class="js-header" href="case.html">Case</a></li>
-        <li><a class="js-header" href="#">Gaps</a>
-          <!-- <ul>
-            <li><a class="js-header" href="#">Time</a></li>
-            <li><a class="js-header" href="#">Day</a></li>
-            <li><a class="js-header" href="#">Week</a></li>
-            <li><a class="js-header" href="#">Year</a></li>
-          </ul> -->
+        <li>
+          <a class="js-header" href="Javascript:void(0);">Gaps</a>
+          <ul class="dropdown js-header">
+            <li><a class="js-header" href="gapTime.html">Time</a></li>
+            <li><a class="js-header" href="gapDay.html">Day</a></li>
+            <li><a class="js-header" href="gapWeek.html">Week</a></li>
+            <li><a class="js-header" href="gapYear.html">Year</a></li>
+          </ul>
         </li>
         <li><a class="js-header" href="voice.html">Voice</a></li>
         <li><a class="js-header" href="contact.html">Contact</a></li>
@@ -98,7 +85,7 @@
           </div>
         </div>
         <div class="more">
-          <a href="#">もっと見る</a>
+          <a href="about.html">もっと見る</a>
         </div>
       </div>
     </section>
@@ -250,8 +237,7 @@
           <circle cx="150" cy="150" r="135" stroke-width="5" fill="#bffff0">
         </svg>
         <div class="svg-title">
-          <p>Gap Time</p>
-          <p class="sub">いつもとは少しだけ違う時間</p>
+          <p>Gap<br>Time</p>
           <span class="svg-btn">一覧へ</span>
           <!-- <p class="arrow">
             <i class="fas fa-chevron-right"></i>
@@ -266,8 +252,7 @@
           <circle cx="150" cy="150" r="135" stroke-width="5" fill="#f0ffc2">
         </svg>
         <div class="svg-title">
-          <p>Gap Day</p>
-          <p class="sub">心に刻まれる一日を</p>
+          <p>Gap<br>Day</p>
           <span class="svg-btn">一覧へ</span>
         </div>
         </a>
@@ -280,8 +265,7 @@
         </svg>
         </svg>
         <div class="svg-title">
-          <p>Gap Week</p>
-          <p class="sub">テーマで過ごす一週間</p>
+          <p>Gap<br>Week</p>
           <span class="svg-btn">一覧へ</span>
         </div>
         </a>
@@ -293,8 +277,7 @@
           <circle cx="150" cy="150" r="135" stroke-width="5" fill="#ffbbbb">
         </svg>
         <div class="svg-title">
-          <p>Gap Year</p>
-          <p class="sub">人生をカラフルにする仕組みを</p>
+          <p>Gap<br>Year</p>
           <span class="svg-btn">一覧へ</span>
         </div>
         </a>

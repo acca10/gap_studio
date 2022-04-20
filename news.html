@@ -19,13 +19,21 @@
   <script src="js/main.js"></script>
 </head>
 <body>
-  <header id="header" class="header">
+  <header id="header" class="header case">
     <nav class="Nav js-header">
-      <ul>
+      <ul class="menu">
         <li><a class="js-header" href="index.html">Home</a></li>
-        <li><a class="js-header" href="#">About</a></li>
+        <li><a class="js-header" href="about.html">About</a></li>
         <li><a class="js-header" href="case.html">Case</a></li>
-        <li><a class="js-header" href="#">Gaps</a></li>
+        <li>
+          <a class="js-header" href="Javascript:void(0);">Gaps</a>
+          <ul class="dropdown js-header">
+            <li><a class="js-header" href="gapTime.html">Time</a></li>
+            <li><a class="js-header" href="gapDay.html">Day</a></li>
+            <li><a class="js-header" href="gapWeek.html">Week</a></li>
+            <li><a class="js-header" href="gapYear.html">Year</a></li>
+          </ul>
+        </li>
         <li><a class="js-header" href="voice.html">Voice</a></li>
         <li><a class="js-header" href="contact.html">Contact</a></li>
       </ul>
@@ -172,11 +180,6 @@
         <li class="pager">...</li>
         <li class="pager"><a href="#">次へ</a></li>
       </ol>
-
-      <!-- <div class="more">
-        <a href="index.html">Home へ</a>
-      </div> -->
-
     </section>
   </div>
 
