@@ -334,14 +334,6 @@ ol {
   color: #fff;
 }
 
-/* #mainvisual .text h2 {
-  margin-left: 30px;
-  margin-top: 30px;
-  letter-spacing: 3px;
-  font-weight: 300;
-  color: #fff;
-} */
-
 #mainvisual p {
   position: absolute;
   top: 550px;
@@ -607,7 +599,7 @@ input[type="radio"] {
   padding-right: 40px;
   padding-bottom: 15px;
   border-bottom: 1px solid #ececec;
-  color: #383935;
+  /* color: #383935; */
 }
 /* NewsPage GapsPage*/
 #newspage,
