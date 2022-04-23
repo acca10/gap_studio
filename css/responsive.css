@@ -9,6 +9,20 @@
     margin-top: 0px;
     margin-left: 0px;
   }
+  
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #header nav li a {
+    font-size: 1rem;
+  }
+  #header nav {
+    height: 90px;
+  }
+  #header nav li {
+    margin: 10px 30px;
+  }
   /* About */
   #about .about-container {
     width: 300px;
@@ -60,15 +74,17 @@
   /* Gaps */
   .gaps-text {
     font-size: 0.9rem;
+    margin: 20px auto;
   }
   .flex {
     flex-direction: column;
+    margin-right: 0px;
     /* display: grid;
     grid-template-columns: repeat( 2, 1fr); */
   }
   .svg .svg-title {
     top: 60px;
-    right: 85px;
+    right: 105px;
   }
 
   /* Voice */
