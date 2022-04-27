@@ -22,11 +22,7 @@
 </head>
 <body>
   <header id="header" class="header case">
-    <!-- <div id="humberger">
-      <span></span>
-      <span></span>
-      <span></span> -->
-    <nav class="Nav js-header">
+    <nav class="Nav js-header pc">
       <ul class="menu">
         <li><a class="js-header" href="index.html">Home</a></li>
         <li><a class="js-header" href="about.html">About</a></li>
@@ -44,11 +40,33 @@
         <li><a class="js-header" href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <!-- </div> -->
+
+    <button type="button" class="hamburger-btn js-btn">
+      <span class="btn-line"></span>
+    </button>
+    <nav class="sp">
+      <ul class="sp-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="case.html">Case</a></li>
+        <li>
+          <a href="Javascript:void(0);">Gaps</a>
+          <ul class="dropdown js-header">
+            <li><a href="gapTime.html">Gap Time</a></li>
+            <li><a href="gapDay.html">Gap Day</a></li>
+            <li><a href="gapWeek.html">Gap Week</a></li>
+            <li><a href="gapYear.html">Gap Year</a></li>
+          </ul>
+        </li>
+        <li><a href="voice.html">Voice</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
   </header>
 
   <main>
-  <section id="content" class="top">
+  <section id="content" class="top" ontouchstart="">
   <div class="contents">
     <div id="mainvisual" class="mv">
       <div class="mv-text">
@@ -379,5 +397,9 @@
       <p><small>Copyright &copy; 2022 Gap Studio All Rights Reserved</small></p>
     </div>
   </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
 </body>
 </html>

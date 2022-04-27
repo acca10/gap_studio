@@ -401,9 +401,10 @@ ol {
 #content{
   position: relative;
 }
-#topBtn {
+#topBtn,
+#menu-sp {
   position: fixed;
-  bottom: 10px;
+  bottom: 20px;
   right: 10px;
   width: 50px;
   height: 50px;
@@ -411,23 +412,24 @@ ol {
   font-size: 1rem;
   text-align: center;
   vertical-align: middle;
-  /* border: 1px solid #6ea1d8; */
+  border: 1px solid #97cdf3;
   border-radius: 50%;
-  /* color: #6ea1d8;
-  background: #fff; */
-  /* box-shadow:5px 5px 5px rgba(175, 175, 175, 0.5); */
+  color: #97cdf3;
+  background: #fff;
+  box-shadow:5px 5px 5px rgba(175, 175, 175, 0.5);
   transition: .3s;
-  color: #fff;
-  background-color: rgba( 151, 205, 243, .6);
+  /* color: #fff;
+  background-color: rgba( 151, 205, 243, .6); */
 }
 
 .material-icons-outlined {
   position: fixed;
-  color: #fff;
+  color: #97cdf3;
   /* color: #6ea1d8; */
   right:-40px;
   font-size: 30px;
 }
+
 /* About */
 #about {
   margin-bottom: 100px;
@@ -901,12 +903,8 @@ input[type="radio"] {
   line-height: 2rem;
 }
 .flex {
-  /* display: grid;
-  grid-template-columns: repeat( 2, 1fr);
-  gap: 50px;
-  padding: 0 15%; */
   display: flex;
-  margin-right: 40px;
+  justify-content: space-around;
 }
 
 .svg {

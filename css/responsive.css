@@ -86,7 +86,7 @@
   }
   .flex {
     flex-direction: column;
-    margin-right: 0px;
+    /* margin-right: 0px; */
     /* display: grid;
     grid-template-columns: repeat( 2, 1fr); */
   }
@@ -94,9 +94,9 @@
     top: 60px;
     right: 105px;
   }
-  /* .svg-btn {
+  .svg-btn {
     opacity: 1;
-  } */
+  }
 
   /* Voice */
   #voice .content {
@@ -104,18 +104,92 @@
   }
 
   #menu-sp {
+    bottom: 80px;
+  }
+  nav .pc {
+    display: none;
+  }
+
+  .sp-menu {
     position: fixed;
-    bottom: 100px;
-    right: 10px;
-    width: 50px;
-    height: 50px;
-    padding-top: 2px;
-    font-size: 1rem;
-    text-align: center;
-    vertical-align: middle;
-    border-radius: 50%;
+    right: -70%;
+    width: 70%;
+    height: 100vh;
+    /* メニューを縦に */
+    display: flex;
+    flex-direction: column;
+    color: #efefef;
+    background-color: rgba(167, 148, 58, 0.7);
     transition: .3s;
-    color: #fff;
-    background-color: rgba( 151, 205, 243, .6);
+  }
+
+  .sp-menu > li {
+    width: 100%;
+    height: 100%;
+    /* メニューテキスト位置をリスト内中心に */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburger-btn {
+    /* ボタンの配置位置  */
+    position: fixed;
+    top: 32px;
+    right: 16px;
+    /* ボタンの大きさ  */
+    width: 48px;
+    height: 48px;
+    /* 最前面に */
+    z-index: 10;
+    background-color: red; /* わかりやすいように */
+  }
+  /***** 真ん中のバーガー線 *****/
+  .btn-line {
+	  display: block;
+	  position: relative;  /* バーガー線の位置基準として設定 */
+	  width: 100%;  /* 線の長さと高さ */
+	  height: 4px;
+	  background-color: #d6d5d5;  /* バーガー線の色 */
+	  transition: .2s;
+  }
+  /****** 上下のバーガー線 *****/
+  .btn-line::before,
+  .btn-line::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #d6d5d5;
+    transition: .5s;
+  }
+  .btn-line::before {
+    /* 上の線の位置 */
+    transform: translateY(-16px);
+  }
+  .btn-line::after {
+    /* 下の線の位置 */
+    transform: translateY(16px);
+  }
+
+  .sp-menu.open {
+    right: 0;
+  }
+
+  /***** メニューオープン時 *****/
+  .btn-line.open {
+  	background-color: transparent;  	/* 真ん中の線を透明に */
+  }
+  .btn-line.open::before ,
+  .btn-line.open::after {
+	  content: "";
+	  background-color: #333;  /* 上下の線の色を変える */
+	  transition: .2s;
+  }
+  .btn-line.open::before {
+	  transform: rotate(45deg);  /* 上の線を傾ける */
+  }
+  .btn-line.open::after {
+	  transform: rotate(-45deg);  /* 下の線を傾ける */
   }
 }

@@ -10,6 +10,12 @@ $(function () {
   });
 });
 
+$(function () {
+  $('.js-btn').on('click', function () {        // js-btnクラスをクリックすると、
+    $('.menu , .btn-line').toggleClass('open'); // メニューとバーガーの線にopenクラスをつけ外しする
+  })
+});
+
 // $(function(){
 //   $(".btn-gnavi").on("click", function(){
 //       // ハンバーガーメニューの位置を設定
@@ -39,19 +45,32 @@ $(document).ready(function () {
       } else {
           $("#topBtn, #menu-sp").fadeOut("fast"); //ボタンがフェードアウトする
       }
-      scrollHeight = $(document).height(); //ドキュメントの高さ 
-      scrollPosition = $(window).height() + $(window).scrollTop(); //現在地 
-      footHeight = $("footer").innerHeight(); //止めたい位置の高さ(footer)
-      if (scrollHeight - scrollPosition <= footHeight) { //ドキュメントの高さと現在地の差がfooterの高さ以下の時
-          $("#topBtn, #menu-sp").css({
-              "position": "absolute", //pisitionをabsoluteに変更
-          });
-      } else { //それ以外の場合は
-          $("#topBtn, #menu-sp").css({
-              "position": "fixed", //固定表示
-          });
-      }
+      // scrollHeight = $(document).height(); ドキュメントの高さ 
+      // scrollPosition = $(window).height() + $(window).scrollTop(); 現在地 
+      // footHeight = $("footer").innerHeight(); 止めたい位置の高さ(footer)
+      // if (scrollHeight - scrollPosition <= footHeight) { ドキュメントの高さと現在地の差がfooterの高さ以下の時
+      //     $("#topBtn, #menu-sp").css({
+      //         "position": "absolute", pisitionをabsoluteに変更
+      //     });
+      // } else { //それ以外の場合は
+      //     $("#topBtn, #menu-sp").css({
+      //         "position": "fixed", 固定表示
+      //     });
+      // }
   });
+
+  //フッターの手前でボタンを止める
+  // $(window).on('load scroll', function(){
+  //   var height = $(document).height(), //ドキュメントの高さ 
+  //       position = window.innerHeight + $(window).scrollTop(), //ページトップから現在地までの高さ
+  //       footer = $('footer').height(); //フッターの高さ
+  //   if ( height - position  < footer ){ 
+  //     btn.addClass('absolute');
+  //   } else { 
+  //     btn.removeClass('absolute');
+  //   }
+  // });
+
 // $(document).ready(function () {
 //   $("#topBtn menu-sp").hide(); //ボタンを非表示にする
 //   $(window).on("scroll", function () {
