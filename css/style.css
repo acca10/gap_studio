@@ -109,7 +109,11 @@ h1, h2, h3, h4, p, dt, dd {
 .more a:hover,
 #contact .btn a:hover,
 #contact .btn input:hover,
-.gaps-btn:hover {
+.gaps-btn:active,
+.more a:active,
+#contact .btn a:active,
+#contact .btn input:active,
+.gaps-btn:active {
   color: #fff;
   background-color: #97cdf3;
   border: 1px solid #97cdf3;
@@ -153,7 +157,8 @@ h1, h2, h3, h4, p, dt, dd {
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-.entry a:hover {
+.entry a:hover,
+.entry a:active {
   color: gray;
   background-color: #fff;
   border: 1px solid gray;
@@ -398,11 +403,11 @@ ol {
 }
 #topBtn {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  padding-top: 7px;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  padding-top: 2px;
   font-size: 1rem;
   text-align: center;
   vertical-align: middle;
@@ -420,7 +425,7 @@ ol {
   position: fixed;
   color: #fff;
   /* color: #6ea1d8; */
-  right:-25px;
+  right:-40px;
   font-size: 30px;
 }
 /* About */
