@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone" rel="stylesheet">
   <!-- FontAwesome -->
   <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
   <!-- CSS -->
@@ -21,6 +22,10 @@
 </head>
 <body>
   <header id="header" class="header case">
+    <!-- <div id="humberger">
+      <span></span>
+      <span></span>
+      <span></span> -->
     <nav class="Nav js-header">
       <ul class="menu">
         <li><a class="js-header" href="index.html">Home</a></li>
@@ -29,19 +34,21 @@
         <li>
           <a class="js-header" href="Javascript:void(0);">Gaps</a>
           <ul class="dropdown js-header">
-            <li><a class="js-header" href="gapTime.html">Time</a></li>
-            <li><a class="js-header" href="gapDay.html">Day</a></li>
-            <li><a class="js-header" href="gapWeek.html">Week</a></li>
-            <li><a class="js-header" href="gapYear.html">Year</a></li>
+            <li><a class="js-header" href="gapTime.html">Gap Time</a></li>
+            <li><a class="js-header" href="gapDay.html">Gap Day</a></li>
+            <li><a class="js-header" href="gapWeek.html">Gap Week</a></li>
+            <li><a class="js-header" href="gapYear.html">Gap Year</a></li>
           </ul>
         </li>
         <li><a class="js-header" href="voice.html">Voice</a></li>
         <li><a class="js-header" href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <!-- </div> -->
   </header>
 
   <main>
+  <section id="content" class="top">
   <div class="contents">
     <div id="mainvisual" class="mv">
       <div class="mv-text">
@@ -226,11 +233,13 @@
         </p>
       </div>
 
-      <p class="gaps-text">Gap Studioでは新しい体験を”Gaps”と呼んでいます。<br>
+      <p class="gaps-text">
+        Gap Studioでは新しい体験を”Gaps”と呼んでいます。<br>
         日常とほんの少しだけ違う体験、それがGapsです。<br>
         1年にこだわらず、まずは１日から。<br>
         日本の社会にも適応できるようアレンジし、<br>
-        個人レベルでの自己改善ができるプログラムを提案します。</p>
+        個人レベルでの自己改善ができるプログラムを提案します。
+      </p>
 
     <div class="flex">
       <div class="svg">
@@ -241,9 +250,6 @@
         <div class="svg-title">
           <p>Gap<br>Time</p>
           <span class="svg-btn">一覧へ</span>
-          <!-- <p class="arrow">
-            <i class="fas fa-chevron-right"></i>
-          </p> -->
         </div>
         </a>
       </div>
@@ -348,9 +354,22 @@
         <a href="#">Instagram へ</a>
     </section> -->
   </div>
+
+  <a href id="menu-sp">
+    <span class="material-icons-outlined">
+      menu
+      </span>
+  </a>
+  <a href="#" id="topBtn">
+    <span class="material-icons-outlined">
+      expand_less
+      </span>
+  </a>
+  </section>
   </main>
 
   <footer>
+    <!-- <p class="button">Top</p> -->
     <div class="footer-contents">
       <h1 class="footer-logo">Gap Studio</h1>
       <div class="sns">

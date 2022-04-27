@@ -4,13 +4,21 @@
   }
   .index-chapter-head {
     flex-direction: column;
+    align-items: center;
   }
   .index-chapter-head .cpy {
     margin-top: 0px;
     margin-left: 0px;
   }
-  
-  .menu {
+/* Menu */
+.header {
+  display: none;
+}
+
+#mainvisual {
+  padding-top: 0px;
+}
+  /* .menu {
     display: flex;
     flex-wrap: wrap;
   }
@@ -22,7 +30,7 @@
   }
   #header nav li {
     margin: 10px 30px;
-  }
+  } */
   /* About */
   #about .about-container {
     width: 300px;
@@ -86,9 +94,28 @@
     top: 60px;
     right: 105px;
   }
+  /* .svg-btn {
+    opacity: 1;
+  } */
 
   /* Voice */
   #voice .content {
     width: 300px;
+  }
+
+  #menu-sp {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    padding-top: 7px;
+    font-size: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    transition: .3s;
+    color: #fff;
+    background-color: rgba( 151, 205, 243, .6);
   }
 }

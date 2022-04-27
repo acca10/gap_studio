@@ -266,10 +266,14 @@ ol {
   box-shadow:10px 10px 10px rgba(175, 175, 175, 0.6);
 }
 #header .dropdown li {
+  /* text-align: start; */
   text-align: center;
-  width: 70px;
-  margin: 0;
-  padding: 8px;
+  width: 100px;
+  margin: 0px;
+  padding: 7px 12px;
+}
+#header .dropdown a {
+  font-size: 0.9rem;
 }
 
 .menu > li:nth-child(4) > a::after{
@@ -388,6 +392,37 @@ ol {
   }
 }
 
+/* TopBtn */
+#content{
+  position: relative;
+}
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  padding-top: 7px;
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  /* border: 1px solid #6ea1d8; */
+  border-radius: 50%;
+  /* color: #6ea1d8;
+  background: #fff; */
+  /* box-shadow:5px 5px 5px rgba(175, 175, 175, 0.5); */
+  transition: .3s;
+  color: #fff;
+  background-color: rgba( 151, 205, 243, .6);
+}
+
+.material-icons-outlined {
+  position: fixed;
+  color: #fff;
+  /* color: #6ea1d8; */
+  right:-25px;
+  font-size: 30px;
+}
 /* About */
 #about {
   margin-bottom: 100px;
@@ -917,11 +952,13 @@ input[type="radio"] {
   transform: rotate(45deg);
 }
 
-.svg:hover .svg-btn {
+.svg:hover .svg-btn,
+.svg:active .svg-btn {
   transition: all .5s 0s ease;
   opacity: 1;
 }
-.svg-btn:hover::after {
+.svg-btn:hover::after,
+.svg-btn:active::after {
   transition: all .5s 0s ease;
   opacity: 1;
 }
