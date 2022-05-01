@@ -109,11 +109,7 @@ h1, h2, h3, h4, p, dt, dd {
 .more a:hover,
 #contact .btn a:hover,
 #contact .btn input:hover,
-.gaps-btn:active,
-.more a:active,
-#contact .btn a:active,
-#contact .btn input:active,
-.gaps-btn:active {
+.gaps-btn:hover {
   color: #fff;
   background-color: #97cdf3;
   border: 1px solid #97cdf3;
@@ -157,8 +153,7 @@ h1, h2, h3, h4, p, dt, dd {
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-.entry a:hover,
-.entry a:active {
+.entry a:hover {
   color: gray;
   background-color: #fff;
   border: 1px solid gray;
@@ -394,7 +389,7 @@ ol {
 }
 
 /* TopBtn */
-#content{
+#content {
   position: relative;
 }
  /* ボタンの装飾 */
@@ -668,7 +663,7 @@ input[type="radio"] {
   margin: 0 auto;
 }
 
-.entry-title {
+#gapspage .entry-title {
   text-align: start;
   padding: 20px 0;
   border-bottom: 2px solid #ececec;
@@ -928,13 +923,11 @@ input[type="radio"] {
   transform: rotate(45deg);
 }
 
-.svg:hover .svg-btn,
-.svg:active .svg-btn {
+.svg:hover .svg-btn {
   transition: all .5s 0s ease;
   opacity: 1;
 }
-.svg-btn:hover::after,
-.svg-btn:active::after {
+.svg-btn:hover::after {
   transition: all .5s 0s ease;
   opacity: 1;
 }

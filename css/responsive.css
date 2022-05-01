@@ -19,8 +19,30 @@
     margin-top: 0px;
   }
 
+  .more a:active,
+  #contact .btn a:active,
+  #contact .btn input:active,
+  .gaps-btn:active {
+    color: #fff;
+    background-color: #97cdf3;
+    border: 1px solid #97cdf3;
+    transition: all .3s 0s ease;
+  }
+  .entry a:active {
+    color: gray;
+    background-color: #fff;
+    border: 1px solid gray;
+    transition: all .3s 0s ease;
+  }
+
+  .readmore-btn:active {
+    background-color: #97cdf3;
+    color: #fff;
+    transition: all .3s 0s ease;
+  }
+
 /* Menu */
-.header {
+header {
   display: none;
 }
 /* .hamburgerMenu */
@@ -244,11 +266,23 @@
   .flex {
     flex-direction: column;
   }
+  .svg:active {
+    transform: scale(1.1);
+    transition: all .5s 0s ease;
+  }
   .svg .svg-title {
     top: 60px;
     right: 105px;
   }
   .svg-btn {
+    opacity: 1;
+  }
+  .svg:active .svg-btn {
+    transition: all .5s 0s ease;
+    opacity: 1;
+  }
+  .svg-btn:active::after {
+    transition: all .5s 0s ease;
     opacity: 1;
   }
 
@@ -259,8 +293,17 @@
     margin-bottom: 10px;
   }
   #gapspage .gapspage-wrapper,
-  #aboutpage .aboutpage-wrapper {
+  #aboutpage .aboutpage-wrapper,
+  #gapspage .header {
     width: 350px;
+  }
+  #gapspage .gapspage-flex {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #gapspage .status {
+    top: -30px;
+    left: 80%;
   }
   /* Voice */
   #voice .content {
