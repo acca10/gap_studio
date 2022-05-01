@@ -212,32 +212,36 @@ ol {
 }
 
 /* Header */
-#header .headerColorScroll {
+.header .headerColorScroll {
   color: #fff;
   background-color: #97cdf3;
   transition: color 0.2s ease-out;
 }
 
-#header nav > ul {
+#sp-menu {
+  display: none;
+}
+
+.header nav > ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#header nav li {
+.header nav li {
   margin: 40px;
 }
 
-#header nav li a {
+.header nav li a {
   font-size: 1.25rem;
   color: gray;
 }
 
-#header nav li a:hover {
+.header nav li a:hover {
   color: #97cdf3;
 }
 
-#header .headerColorScroll:hover {
+.header .headerColorScroll:hover {
   color: gray;
 }
 
@@ -263,6 +267,7 @@ ol {
   display: block;
   position: absolute;
 }
+
 .dropdown {
   left: 2rem;
   top: 1.6rem;
@@ -270,14 +275,14 @@ ol {
   transition: color 0.2s ease-out;
   box-shadow:10px 10px 10px rgba(175, 175, 175, 0.6);
 }
-#header .dropdown li {
-  /* text-align: start; */
+.header .dropdown li {
   text-align: center;
   width: 100px;
   margin: 0px;
   padding: 7px 12px;
 }
-#header .dropdown a {
+
+.header .dropdown a {
   font-size: 0.9rem;
 }
 
@@ -305,15 +310,6 @@ ol {
   height: 650px;
   position: relative;
 }
-/* 
-#mainvisual .text {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 100px;
-  left: 10%;
-  z-index: 10;
-} */
 
 .mv-text {
   display: flex;
@@ -401,34 +397,35 @@ ol {
 #content{
   position: relative;
 }
-#topBtn,
-#menu-sp {
+ /* ボタンの装飾 */
+.pagetop-btn {
   position: fixed;
+  right: 20px;
   bottom: 20px;
-  right: 10px;
+  z-index: 100;
   width: 50px;
   height: 50px;
-  padding-top: 2px;
-  font-size: 1rem;
-  text-align: center;
-  vertical-align: middle;
-  border: 1px solid #97cdf3;
   border-radius: 50%;
+  border: 1px solid #97cdf3;
   color: #97cdf3;
   background: #fff;
   box-shadow:5px 5px 5px rgba(175, 175, 175, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: .3s;
-  /* color: #fff;
-  background-color: rgba( 151, 205, 243, .6); */
+  
+}
+/* 矢印のスタイル */
+.pagetop-btn::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid #97cdf3;
+  border-top: 2px solid #97cdf3;
+  transform: rotate(-45deg)
 }
 
-.material-icons-outlined {
-  position: fixed;
-  color: #97cdf3;
-  /* color: #6ea1d8; */
-  right:-40px;
-  font-size: 30px;
-}
 
 /* About */
 #about {
@@ -447,7 +444,6 @@ ol {
 }
 
 #about .about-container {
-  /* padding: 20px 20px; */
   display: flex;
   align-items: center;
   width: 900px;
@@ -566,29 +562,6 @@ input[type="radio"] {
 #news-archive .filters * {
   display: inline-block;
 }
-/* .filters label {
-  text-align: center;
-  padding: 0.25rem 0.5rem;
-  margin-bottom: 0.25rem;
-  min-width: 50px;
-  line-height: normal;
-  cursor: pointer;
-  transition: all 0.2s;
-} */
-
-
-/* .filters label:hover {
-  background: #97cdf3;
-  color: #fff;
-} */
-/* [value="All"]:checked ~ .filters [for="All"],
-[value="info"]:checked ~ .filters [for="info"],
-[value="interview"]:checked ~ .filters [for="interview"],
-[value="gaps"]:checked ~ .filters [for="gaps"]{
-  background-color: #fff;
-  color: gray;
-} */
-
 
 #news .label-all,
 #news-archive .label-all {
@@ -643,6 +616,7 @@ input[type="radio"] {
   border-bottom: 1px solid #ececec;
   /* color: #383935; */
 }
+
 /* NewsPage GapsPage*/
 #newspage,
 #gapspage {
@@ -725,7 +699,6 @@ input[type="radio"] {
 
 #case .case-item {
   padding: 30px;
-  /* padding: 30px 20px; */
   border-radius: 15px;
   background-color: #eaf6fd;
   margin-bottom: 50px;
@@ -1221,16 +1194,11 @@ input[type="radio"] {
   background-color: #eaf6fd;
 }
 
-
 .Form {
   margin: 50px auto;
   max-width: 720px;
 }
-/* @media screen and (max-width: 480px) {
-  .Form {
-    margin-top: 40px;
-  }
-} */
+
 .Form-Item {
   border-top: 1px solid #ddd;
   padding-top: 20px;
@@ -1240,15 +1208,7 @@ input[type="radio"] {
   align-items: center;
   justify-content: space-around;
 }
-/* @media screen and (max-width: 480px) {
-  .Form-Item {
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    flex-wrap: wrap;
-  }
-} */
+
 .Form-Item:nth-child(5) {
   border-bottom: 1px solid #ddd;
 }
@@ -1265,23 +1225,12 @@ input[type="radio"] {
   /* text-align-last: justify;       /* Chrome・Firefox用 */
   /* text-justify: inter-ideograph;  IE・Edge用 */ 
 }
-/* @media screen and (max-width: 480px) {
-  .Form-Item-Label {
-    max-width: inherit;
-    display: flex;
-    align-items: center;
-    font-size: 15px;
-  }
-} */
+
 .Form-Item-Label.isMsg {
   margin-top: 8px;
   margin-bottom: auto;
 }
-/* @media screen and (max-width: 480px) {
-  .Form-Item-Label.isMsg {
-    margin-top: 0;
-  }
-} */
+
 .Form-Item-Label-Required {
   border-radius: 3px;
   margin-right: 4px;
@@ -1295,15 +1244,7 @@ input[type="radio"] {
   color: #fff;
   font-size: 0.8rem;
 }
-/* @media screen and (max-width: 480px) {
-  .Form-Item-Label-Required {
-    border-radius: 4px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    width: 32px;
-    font-size: 10px;
-  }
-} */
+
 .Form-Item-Input {
   border: 1px solid #ddd;
   border-radius: 6px;
@@ -1347,15 +1288,7 @@ input[type="radio"] {
   background: #eaedf2;
   color: gray;
 }
-/* @media screen and (max-width: 480px) {
-  .Form-Item-Input {
-    margin-left: 0;
-    margin-top: 18px;
-    height: 40px;
-    flex: inherit;
-    font-size: 15px;
-  }
-} */
+
 .Form-Item-Textarea {
   border: 1px solid #ddd;
   border-radius: 6px;
@@ -1371,39 +1304,7 @@ input[type="radio"] {
   background: #eaedf2;
   /* font-size: 18px; */
 }
-/* @media screen and (max-width: 480px) {
-  .Form-Item-Textarea {
-    margin-top: 18px;
-    margin-left: 0;
-    height: 200px;
-    flex: inherit;
-    font-size: 15px;
-  }
-} */
-/* .Form-Btn {
-  border-radius: 6px;
-  margin-top: 32px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 280px;
-  display: block;
-  letter-spacing: 0.05em;
-  background: #5bc8ac;
-  color: #fff;
-  font-weight: bold;
-  font-size: 20px;
-}
-@media screen and (max-width: 480px) {
-  .Form-Btn {
-    margin-top: 24px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    width: 160px;
-    font-size: 16px;
-  }
-} */
+
 .btn {
   color: gray;
 }
@@ -1411,6 +1312,7 @@ input[type="radio"] {
 #contact a {
   font-size: 1rem;
 }
+
 /* #instagram {
   margin-bottom: 80px;
 }
@@ -1480,16 +1382,16 @@ footer p {
 footer .sns {
   display: flex;
   width: 100px;
-  color: #fff;
+  /* color: #fff; */
   justify-content: space-around;
   margin: 10px 0;
 }
 
-footer i:hover {
-  color: gray;
-  transition: all .3s 0s ease;
-}
-
 footer .sns .fab {
   font-size: 1.75em;
+  color: #fff;
+}
+footer .sns .fab:hover {
+  color: gray;
+  transition: all .3s 0s ease;
 }

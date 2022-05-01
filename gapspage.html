@@ -14,13 +14,14 @@
   <!-- CSS -->
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/jquery.inview.min.js"></script>
   <script src="js/main.js"></script>
 </head>
 
 <body>
-  <header id="header" class="header case">
+  <header id="content" class="header case" ontouchstart="">
     <nav class="Nav js-header">
       <ul class="menu">
         <li><a class="js-header" href="index.html">Home</a></li>
@@ -29,10 +30,10 @@
         <li>
           <a class="js-header" href="Javascript:void(0);">Gaps</a>
           <ul class="dropdown js-header">
-            <li><a class="js-header" href="gapTime.html">Time</a></li>
-            <li><a class="js-header" href="gapDay.html">Day</a></li>
-            <li><a class="js-header" href="gapWeek.html">Week</a></li>
-            <li><a class="js-header" href="gapYear.html">Year</a></li>
+            <li><a class="js-header" href="gapTime.html">Gap Time</a></li>
+            <li><a class="js-header" href="gapDay.html">Gap Day</a></li>
+            <li><a class="js-header" href="gapWeek.html">Gap Week</a></li>
+            <li><a class="js-header" href="gapYear.html">Gap Year</a></li>
           </ul>
         </li>
         <li><a class="js-header" href="voice.html">Voice</a></li>
@@ -40,6 +41,33 @@
       </ul>
     </nav>
   </header>
+  
+    <!-- hamburgerMenu -->
+    <input type="checkbox" id="hamburger" class="js-header">
+    <label for="hamburger" class="js-header">
+      <span class="burger js-header">
+        <span class="bar js-header"></span>
+      </span>
+    </label>
+    <label class="light-dark" for="hamburger"></label>
+    <nav id="sp-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="case.html">Case</a></li>
+        <li>
+          <a href="Javascript:void(0);">Gaps</a>
+          <ul>
+            <li><a href="gapTime.html" class="gaps-menu">- Gap Time</a></li>
+            <li><a href="gapDay.html" class="gaps-menu">- Gap Day</a></li>
+            <li><a href="gapWeek.html" class="gaps-menu">- Gap Week</a></li>
+            <li><a href="gapYear.html" class="gaps-menu">- Gap Year</a></li>
+          </ul>
+        </li>
+        <li><a href="voice.html">Voice</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
     <div class="contents">
     <section id="gapspage" class="inner contents-inner">
@@ -154,17 +182,18 @@
       </div>
 
     </section>
+    <a href="#"  id="topBtn" class="pagetop-btn"></a>
     </div>
     
-  <footer>
-    <div class="footer-contents">
-      <h1 class="footer-logo">Gap Studio</h1>
-      <div class="sns">
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-youtube"></i>
+    <footer>
+      <div class="footer-contents">
+        <h1 class="footer-logo">Gap Studio</h1>
+        <div class="sns">
+          <a href="https://www.instagram.com/sanoken0928/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtu.be/RtAjBVxzs4c" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p><small>Copyright &copy; 2022 Gap Studio All Rights Reserved</small></p>
       </div>
-      <p><small>Copyright &copy; 2022 Gap Studio All Rights Reserved</small></p>
-    </div>
-  </footer>
+    </footer>
 </body>
 </html>
