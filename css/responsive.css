@@ -141,7 +141,7 @@ header {
     color: #97cdf3;
     font-size: 1.25rem;
   }
-  #sp-menu a:hover {
+  #sp-menu a:active {
     color: gray;
     transition: all .3s 0s ease;
   }
@@ -280,18 +280,11 @@ header {
     transition: all .5s 0s ease;
   }
   .svg .svg-title {
-    top: 60px;
+    top: 50px;
     right: 105px;
   }
   .svg-btn {
-    opacity: 1;
-  }
-  .svg:active .svg-btn {
-    transition: all .5s 0s ease;
-    opacity: 1;
-  }
-  .svg-btn:active::after {
-    transition: all .5s 0s ease;
+    margin-top: 12px;
     opacity: 1;
   }
 
