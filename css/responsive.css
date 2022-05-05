@@ -23,6 +23,14 @@
     margin-top: 0px;
   }
 
+  .more a,
+  #contact .btn a,
+  .gaps-btn,
+  .entry a,
+  .pager a {
+    z-index: 30;
+  }
+
   .more a:active,
   #contact .btn a:active,
   #contact .btn input:active,
