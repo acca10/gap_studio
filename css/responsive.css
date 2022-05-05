@@ -193,16 +193,18 @@ header {
   #about .about-container {
     width: 350px;
     flex-direction: column-reverse;
+    justify-content: center;
   }
   #about .about-text {
-    width: 100%;
+    width: 90%;
     margin-top: 40px;
     font-size: 0.9rem;
     text-align: center;
   }
   #about .about-img {
-    width: 100%;
+    width: 90%;
   }
+
   #aboutpage .about-flex {
     flex-direction: column;
     margin-top: 80px;
@@ -361,5 +363,14 @@ header {
     height: 200px;
     flex: inherit;
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width:380px) {
+  #about .about-container {
+    padding-right: 55px;
+  }
+  .svg .svg-title {
+    right: 85px;
   }
 }
