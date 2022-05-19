@@ -1,3 +1,8 @@
+@charset "UTF-8";
+/* 
+Theme Name :gap-studio
+*/
+
 html {
   font-size: 100%;
 }
@@ -674,6 +679,7 @@ input[type="radio"] {
   margin: 0 auto;
 }
 
+#newspage .entry-title,
 #gapspage .entry-title {
   text-align: start;
   padding: 20px 0;
