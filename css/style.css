@@ -524,7 +524,7 @@ ol {
 }
 
 #about .about-text {
-  width: 55%;
+  width: 60%;
   font-size: 1.1rem;
   line-height: 2rem;
   text-align: start;
@@ -554,7 +554,6 @@ ol {
 
 #aboutpage .philosophy {
   width: 400px;
-  /* margin: 0 auto; */
   text-align: start;
 }
 
