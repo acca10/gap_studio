@@ -217,7 +217,6 @@ Theme Name :gap-studio
     width: 90%;
     margin-top: 40px;
     font-size: 0.9rem;
-    /* text-align: center; ０２０４*/
   }
   #about .about-img {
     width: 90%;
@@ -228,23 +227,10 @@ Theme Name :gap-studio
   #aboutpage .vm_item {
     width: 100%;
   }
-/*   
-  #aboutpage .about-flex {
-    flex-direction: column;
-    margin-top: 80px;
-  } ０２０４*/
 
-  /* #aboutpage .about-img {
-    width: 100%;
-  }
-  #aboutpage .about-text {
-    width: 100%;
-    margin-top: 20px;
-  }０２０４ */
   #aboutpage .heading {
     display: block;
     font-weight: normal;
-    /* text-align: center; ０２０４*/
   }
   #aboutpage .value_container,
   #aboutpage .content  {
@@ -261,9 +247,6 @@ Theme Name :gap-studio
     margin-top: 25px;
     height: 220px;
   }
-  /* #aboutpage .content {
-    grid-template-columns: repeat( 1, 1fr);
-  } */
 
   #aboutpage .aboutpage-img {
     width: 100%;
@@ -281,23 +264,6 @@ Theme Name :gap-studio
     margin-top: 20px;
   }
 
-  /* #aboutpage .philosophy_container {
-    flex-direction: column;
-  }
-  #aboutpage .philosophy_container .philosophy_item {
-    width: 100%;
-  }
-  #aboutpage .philosohy_text {
-    padding: 10px 40px;
-    top: 20%;
-  }
-  #aboutpage .philosophy_container .philosophy_item img {
-    margin-bottom: 10px;
-    height: 220px;
-  }
-  #aboutpage .aboutpage-img {
-    width: 100%;
-  }０２０４ */
   /* News */
   #news .news-flex,
   #news-archive  .news-flex {
