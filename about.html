@@ -76,50 +76,113 @@
       <p class="cpy">私たちについて</p>
     </div>
     <div class="aboutpage-wrapper">
-      <!-- <div class="index-chapter-head mv">
-        <h2 class="hdl ">Philosophy</h2>
-        <p class="cpy">Gap Studioの3C=理念</p>
-      </div> -->
+
       <div class="philosophy">
-        <h2 class="heading">Gap Studioが掲げる<strong>3つ</strong>の理念</h2>
-        <div class="philosophy_container" >
-          <div class="philosophy_item">
+        <div class="vision_mission">
+          <div class="vm_item">
+            <div id="heading" class="heading">
+              <h2>VISION</h2>
+              <h4>哲学</h4>
+            </div>
+            <h5 class="vm_title">もっと地球を楽しもう</h5>
+            <p class="vm_text">
+              楽しむことで感動が生まれ、<br>
+              感動は課題解決のきっかけになります。<br>
+              現代の社会問題を解決するために、<br>
+              もっと地球を楽しむことができる事業を<br>
+              展開していきます。
+            </p>
+          </div>
+          <div class="vm_item">
+            <div id="heading" class="heading">
+              <h2>MISSION</h2>
+              <h4>事業の目的</h4>
+            </div>
+            <h5 class="vm_title">100年間ワクワクできる世界をつくる</h5>
+            <p class="vm_text">
+              ギャップイヤーという<br>新しい選択肢を広めることで<br>
+              well-being を促進し、<br>
+              持続可能な暮らしと<br>地球環境の保全に貢献します。
+            </p>
+          </div>
+        </div>
+
+        <div class="heading">
+          <h2>VALUE</h2>
+          <h4>大切にしていること</h4>
+        </div>
+        <div class="value_container" >
+          <div class="value_item">
             <img src="image/about/philosophy_1.jpg">
-            <div class="philosophy_text">
-              <h2 class="philosophy_title" data-number="01">Challenge</h2>
-              <p class="philosophy_ja">挑戦を絶対的に認める</p>
+            <div class="value_text">
+              <h2 class="value_title" data-number="01">Challenge</h2>
+              <p class="value_ja">挑戦を絶対的に認める</p>
             </div>
           </div>
-          <div class="philosophy_item">
+          <div class="value_item">
             <img src="image/about/philosophy_2.jpg">
-            <div class="philosophy_text">
-              <h2 class="philosophy_title" data-number="02">Community</h2>
-              <p class="philosophy_ja">同志に出会う</p>
+            <div class="value_text">
+              <h2 class="value_title" data-number="02">Community</h2>
+              <p class="value_ja">同志に出会う</p>
             </div>
           </div>
-          <div class="philosophy_item">
+          <div class="value_item">
             <img src="image/about/philosophy_3.jpg">
-            <div class="philosophy_text">
-              <h2 class="philosophy_title" data-number="03">Creative<br></h2>
-              <p class="philosophy_ja">楽しめる力を養う</p>
+            <div class="value_text">
+              <h2 class="value_title" data-number="03">Creative</h2>
+              <p class="value_ja">楽しめる力を養う</p>
             </div>
           </div>
         </div>
-        
-      <!-- <h2>
-        01. <br>Challenge<br>挑戦を絶対的に認める<br><br>
-        02. <br>Community<br>同志に出会う<br><br>
-        03. <br>Creative<br>楽しめる力を養う<br><br>
-      </h2> -->
-      </div>
-      <p>
-      ぼくは、もっと地球を楽しめる社会を実現したい。<br>
-      それは、地球環境を守り、世界平和に繋がる手段の一つだと信じている。<br><br>
-      そこで、Gap Studioというブランドを作り、日本にギャップイヤーの文化をつくる事業を始めた。<br>
-      ギャップイヤーとは、僕の解釈だと「人生をカラフルにする仕組み」。<br><br>
-      新しい選択肢となり、挑戦する人を認め、仲間に出会う。<br>
-      何より楽しむ力を養うことで、もっと地球を楽しむ人を増やす、ということが目的だ。<br><br>
-      </p>
+
+        <div id="heading" class="heading">
+          <h2>BUSINESS</h2>
+          <h4>事業内容</h4>
+        </div>
+        <div class="content">
+          <div class="business_item equal-height">
+            <h4>体験事業</h4>
+            <h5>Gaps</h5>
+            <p>日常とほんの少しだけ違う体験</p>
+            <a class="business_btn" href=# >Gapsへ</a>
+          </div>
+          <div class="business_item equal-height">
+            <h4>コミュニティ事業</h4>
+            <h5>ギャップイヤーの学校</h5>
+            <p>
+              ギャップイヤーを使って<br>
+              ワクワク生きる人たちが集う<br>
+              オンラインコミュニティ
+            </p>
+            <a class="business_btn" href=# target="_blank">詳細はこちら</a>
+          </div>
+          <div class="business_item equal-height">
+            <h4>プロデュース事業</h4>
+            <h5>studio</h5>
+            <p>
+              一人ひとりに合った<br>
+              ギャップイヤーをプロデュース
+            </p>
+            <a class="business_btn" href=# target="_blank">お問い合わせ</a>
+          </div>
+        </div>
+      <script>
+          function equalHeight(elements) {
+            const target = Array.from(document.querySelectorAll(elements));
+            const heightList = [];
+            target.forEach(element => {
+              const height = element.clientHeight;
+              heightList.push(height);
+            });
+            const maxHeight = Math.max.apply(null,heightList);
+            target.forEach(element => {
+              element.style.height = maxHeight + 40 + 'px';
+            });
+          }
+
+          equalHeight('.equal-height');
+        </script>
+
       <div class="index-chapter-head mv">
         <h2 class="hdl ">Story</h2>
         <p class="cpy">ストーリー</p>
@@ -294,25 +357,22 @@
       </p>
       <br><br>
 
-      <div class="about-flex">
-        <div class="about-img">
+      <div class="profile-flex">
+        <div class="profile-img">
           <img src="image/about/portrait.png" alt="">
         </div>
-        <div class="about-text">
+        <div class="profile-text">
           <h3>代表  XX XX</h3>
           <p>
             東京都XX区出身、XX在住。
-            あだ名は「さのけん」。<br>
-            20歳の時に世界一周。<br>
-            27歳の時に世界一周の体験をまとめた本『FIRST PERIOD』を出版。<br>
-            （電子版 『First Journey』が発売中）<br>
-            旅行会社のH.I.S.に新卒から8年間勤務し、<br>
-            延べ7,000人以上の旅のプランニング、雑用係から売上No.1、新宿本社営業所の所長代理まで経験後、独立。<br>
-            現在は、日本にギャップイヤーの文化をつくる<br>
-            「Gap Studio」を運営。<br>
-            総合旅行業務取扱管理者。エリアスペシャリスト（ヨーロッパⅠ、ヨーロッパⅡ、ヨーロッパⅢ、北米・南米、オセアニア・南太平洋）。
+            テキストテキストテキストテキストテキストテキスト<br>
+            テキストテキストテキストテキスト<br>
+            テキストテキストテキストテキストテキストテキスト<br>
+            テキストテキストテキストテキストテキスト<br>
+            テキストテキストテキスト<br>
+            テキストテキストテキストテキストテキストテキスト<br>
+            テキストテキストテキスト
           </p>
- 
         </div>
       </div>
 

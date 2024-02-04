@@ -568,7 +568,163 @@ h1, h2, h3, h4, p, dt, dd,
 #aboutpage {
   margin-bottom: 50px;
 }
-#aboutpage .about-flex {
+#aboutpage .vision_mission {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+#aboutpage .vm_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+#aboutpage .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+#aboutpage .heading h2 {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px; */
+  font-weight: normal;
+  font-size: 2rem;
+  /* border-right: 5px solid rgba(255, 241, 000, .6); */
+  border-left: 5px solid rgba(255, 241, 000, .6);
+  padding-left: 20px;
+  letter-spacing: 5px;
+}
+#aboutpage .heading h4 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: normal;
+}
+#aboutpage .vm_title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: gray;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+#aboutpage .vm_title::before,
+#aboutpage .vm_title::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+}
+
+#aboutpage .vm_title::before {
+  margin: -18px 0 0 0;
+  border-top: 5px solid rgba(255, 241, 000, .5);
+  border-left: 5px solid rgba(255, 241, 000, .5);
+}
+#aboutpage .vm_title::after {
+  margin: 0 0 -18px 0;
+  border-right: 5px solid rgba(255, 241, 000, .5);
+  border-bottom: 5px solid rgba(255, 241, 000, .5);
+}
+#aboutpage .vm_text {
+  text-align: center;
+}
+#aboutpage .value_container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  padding: 0 20px;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+}
+#aboutpage .value_container .value_item {
+  width: 32%;
+  position: relative;
+}
+#aboutpage .value_text {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  padding: 10px 55px;
+  margin: 0 auto;
+  text-align: start;
+  background-color: rgba( 128, 128, 128, .7);
+}
+#aboutpage .value_title {
+  position: relative;
+  font-size: 2rem;
+  padding-left: 2em;
+  color: #fff;
+}
+#aboutpage .value_title::first-letter{
+  font-size: 2.5rem;
+  color: #97cdf3;
+}
+
+#aboutpage .value_title::before {
+  content: attr(data-number);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-bottom: 5px;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+#aboutpage .value_ja {
+  margin-top: 15px;
+  color: #fff;
+  font-weight: bold;
+}
+#aboutpage .value_container .value_item img {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  object-fit: fill;
+}
+#aboutpage .content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+#aboutpage .business_item {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  position: relative;
+  padding: 30px 20px;
+  border-radius: 15px;
+  background-color: #eaf6fd;
+}
+#aboutpage .business_btn {
+  position: absolute;
+  bottom: 25px;
+  left: 34px;
+}
+#aboutpage .business_item h4 {
+  padding-bottom: 20px;
+  border-bottom: #fff 5px solid;
+  font-size: 1rem;
+  font-weight: bold;
+}
+#aboutpage .business_item h5 {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 0 10px;
+  color: gray;
+}
+#aboutpage .business_item p {
+  text-align: center;
+}
+
+/* #aboutpage .about-flex {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -601,9 +757,9 @@ h1, h2, h3, h4, p, dt, dd,
 #aboutpage .heading::after {
   margin-left: 30px;
   transform: rotate(35deg);
-}
+} */
 
-#aboutpage .philosophy_container {
+/* #aboutpage .philosophy_container {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
@@ -657,7 +813,7 @@ h1, h2, h3, h4, p, dt, dd,
   height: 280px;
   overflow: hidden;
   object-fit: fill;
-}
+} */
 
 #aboutpage .aboutpage-img {
   width: 70%;
@@ -665,17 +821,24 @@ h1, h2, h3, h4, p, dt, dd,
   box-shadow: 5px 10px 20px rgba(0,0,0,0.25);
 }
 
-#aboutpage .about-text {
+#aboutpage .profile-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+#aboutpage .profile-text {
   width: 50%;
   line-height: 2;
   text-align: start;
 }
 
-#aboutpage .about-img {
+#aboutpage .profile-img {
   width: 35%;
 }
 
-#aboutpage .about-img>img {
+#aboutpage .profile-img>img {
   display: block;
   width: 100%;
   height: auto;
