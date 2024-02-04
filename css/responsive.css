@@ -57,6 +57,10 @@ Theme Name :gap-studio
     color: #fff;
     transition: all .3s 0s ease;
   }
+  /* スマホ時は改行 */
+  .sp {
+    display: block;
+  }
 
   /* card */
   #case .content,
@@ -213,24 +217,87 @@ Theme Name :gap-studio
     width: 90%;
     margin-top: 40px;
     font-size: 0.9rem;
-    text-align: center;
+    /* text-align: center; ０２０４*/
   }
   #about .about-img {
     width: 90%;
   }
-
+  #aboutpage .vision_mission {
+    flex-direction: column;
+  }
+  #aboutpage .vm_item {
+    width: 100%;
+  }
+/*   
   #aboutpage .about-flex {
     flex-direction: column;
     margin-top: 80px;
-  }
+  } ０２０４*/
 
-  #aboutpage .about-img {
-    width: 80%;
+  /* #aboutpage .about-img {
+    width: 100%;
   }
   #aboutpage .about-text {
     width: 100%;
     margin-top: 20px;
+  }０２０４ */
+  #aboutpage .heading {
+    display: block;
+    font-weight: normal;
+    /* text-align: center; ０２０４*/
   }
+  #aboutpage .value_container,
+  #aboutpage .content  {
+    flex-direction: column;
+  }
+  #aboutpage .value_container .value_item {
+    width: 100%;
+  }
+  #aboutpage .value_text {
+    padding: 10px 40px;
+    top: 20%;
+  }
+  #aboutpage .value_container .value_item img {
+    margin-top: 25px;
+    height: 220px;
+  }
+  /* #aboutpage .content {
+    grid-template-columns: repeat( 1, 1fr);
+  } */
+
+  #aboutpage .aboutpage-img {
+    width: 100%;
+  }
+
+  #aboutpage .profile-flex {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+  #aboutpage .profile-img {
+    width: 80%;
+  }
+  #aboutpage .profile-text {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* #aboutpage .philosophy_container {
+    flex-direction: column;
+  }
+  #aboutpage .philosophy_container .philosophy_item {
+    width: 100%;
+  }
+  #aboutpage .philosohy_text {
+    padding: 10px 40px;
+    top: 20%;
+  }
+  #aboutpage .philosophy_container .philosophy_item img {
+    margin-bottom: 10px;
+    height: 220px;
+  }
+  #aboutpage .aboutpage-img {
+    width: 100%;
+  }０２０４ */
   /* News */
   #news .news-flex,
   #news-archive  .news-flex {
@@ -314,13 +381,6 @@ Theme Name :gap-studio
   .svg-btn {
     margin-top: 12px;
     opacity: 1;
-  }
-
-  #gapTime .filters label,
-  #gapDay .filters label,
-  #gapWeek .filters label,
-  #gapYear .filters label {
-    margin-bottom: 10px;
   }
   #gapspage .gapspage-wrapper,
   #aboutpage .aboutpage-wrapper,
